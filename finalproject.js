@@ -1,4 +1,3 @@
-// MOBILE MENU
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 
@@ -6,12 +5,10 @@ menuToggle.addEventListener("click", function () {
   navMenu.classList.toggle("active");
 });
 
-// SCROLL BUTTON
 document.getElementById("ctaBtn").addEventListener("click", function () {
   document.getElementById("models").scrollIntoView({ behavior: "smooth" });
 });
 
-// DARK / LIGHT MODE
 const themeToggle = document.getElementById("themeToggle");
 
 themeToggle.addEventListener("click", function () {
@@ -19,7 +16,6 @@ themeToggle.addEventListener("click", function () {
   themeToggle.textContent = document.body.classList.contains("light") ? "☀️" : "🌙";
 });
 
-// COLOR CLICK GLOW
 const carCards = document.querySelectorAll(".car-card");
 
 carCards.forEach(card => {
@@ -31,7 +27,6 @@ carCards.forEach(card => {
   });
 });
 
-// MODAL
 const modal = document.getElementById("carModal");
 const closeBtn = document.querySelector(".close-btn");
 
